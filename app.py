@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 import easyocr
 import re
+import locale
 from datetime import datetime
 import cv2
 
