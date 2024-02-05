@@ -5,7 +5,7 @@ from datetime import datetime
 import locale
 import cv2
 
-locale.setlocale(locale.LC_TIME, "es_ES")
+locale.setlocale(locale.LC_TIME, "es_ES.UTF-8")
 
 reader = easyocr.Reader(['es'])
 
