@@ -1,11 +1,13 @@
 from flask import Flask, request, jsonify
 import easyocr
 import re
-import locale
 from datetime import datetime
+import locale
 import cv2
 
-print(locale.getlocale())
+
+locale.setlocale(locale.LC_TIME, "es_ES")
+
 reader = easyocr.Reader(['es'])
 
 app = Flask(__name__)
