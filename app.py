@@ -5,7 +5,7 @@ import locale
 from datetime import datetime
 import cv2
 
-
+print(locale.getlocale())
 reader = easyocr.Reader(['es'])
 
 app = Flask(__name__)
